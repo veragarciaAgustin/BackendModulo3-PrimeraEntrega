@@ -3,11 +3,10 @@ const router = Router();
 
 import mocksController from "../controllers/mocks.controller.js";
 
-router.get("/mockingpets", mocksController.getMockingPets); 
+//Creamos una rutita para obtener mascotas simuladas: 
+router.get("/mockingpets", mocksController.getMascotas); 
 
-router.get("/mockingusers", mocksController.getMockingUsers); 
-
-//ENDPOINT POST
-router.get("/generateData", mocksController.generateData)
+//Creamos otra rutita para obtener usuarios simulados
+router.get("/mockingusers", mocksController.getUsuarios);
 
 export default router; 
